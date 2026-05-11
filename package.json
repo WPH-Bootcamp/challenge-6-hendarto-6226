@@ -9,6 +9,10 @@
     "dev": "npm run build && npm start"
   },
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
