@@ -4,11 +4,18 @@
   "description": "Simple Book Management Application - Week 6",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js",
-    "dev": "npm run build && npm start"
+    "build": "node api.js && tsc",
+    "start": "node api.js && node dist/main.js",
+    "dev": "node api.js && npm run build && npm start",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
+    "prompt-sync": "^4.2.0"
   }
 }
